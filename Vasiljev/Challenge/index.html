@@ -32,26 +32,41 @@
 
         .player2 {
             background-color: rgb(88, 246, 185);
+            display: flex;
+            flex-direction: column;
+            flex-direction: column-reverse;
+        }
+
+        * {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        input {
+            display: block;
+            width: 50%;
+            margin: 0 auto;
+            padding: 1rem 0
         }
 
     </style>
 </head>
 <body>
 
-
-    <h1>hehe</h1>
-
     <div class="cont">
         <div class="player1">
             <input type="button" value="Roll" id="dice1">
             <h1 id="player1"></h1>
         </div>
+        <h1 id="result"></h1>
         <div class="player2">
             <input type="button" value="Roll" id="dice2">
             <h1 id="player2"></h1>
         </div>
     </div>
-
 
     <script src="js.js"></script>
     
